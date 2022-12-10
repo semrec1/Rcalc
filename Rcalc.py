@@ -1,20 +1,22 @@
-#a.find basic descriptive statistcs
-library(datasets)  # Load built-in datasets
-mtcars # loads in sample datasets for cars
-summary(mtcars)
-str(mtcars) #displays structure of dataset
-quantile(mtcars$mpg)
+# i.Using with and without R objects on console 
+# using without objects
+2587+2149
+123*344
+50/2
 
-cars#loads cars dataset
-summary(cars)
-quantile(cars$speed)
-class(cars) # displays class of dataset
-dim(cars) #displays dimensions of dataset
-str(cars)
+# using with objects
+A= 100
+B= 200
+C= B-A
+C
+# ii.Using mathematical functions on console
+a= 100
+class(a)
+b= 500
+class(b)
+sum(a-b)
 
-#b.find subset of dataset using subset() , aggregate()
-aggregate(.~Species,data=iris,mean)
-subset(iris,iris$Sepal.Length==5.0)
-
-# Clear packages
-detach("package:datasets", unload = TRUE)  # For base
+# iii.Write an R script, to create R objects for calculator application and save in a specified location in disk. 
+getwd()
+a=100
+write.csv(a,'a.csv')
